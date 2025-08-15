@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>دليل وصفات بداية الأكل الصلب للرضع (6-12 أشهر)</title>
+<style>
+  :root{
+    --brand:#ff7f50; /* coral */
+    --brand-2:#ffb347; /* light orange */
+    --bg:#fff8f0; /* warm cream */
+    --card:#ffffff;
+    --text:#3b3b3b;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:"Tajawal", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;background:var(--bg);color:var(--text);}
+  .hero{position:relative;min-height:38vh;display:flex;align-items:center;justify-content:center;overflow:hidden;border-bottom:8px solid #ffd9b5}
+  .hero::before{content:"";position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1604881987920-8f4f434d2a15?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;filter:brightness(0.7)}
+  .hero-inner{position:relative;text-align:center;color:#fff;padding:24px}
+  .hero h1{margin:0 0 8px;font-size:clamp(24px,4vw,40px)}
+  .hero p{margin:0;font-size:clamp(14px,2.2vw,18px)}
+
+  .container{max-width:1100px;margin:auto;padding:16px}
+  .tabs{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:-28px}
+  .tab{background:var(--brand);color:#fff;border:none;padding:12px 16px;border-radius:999px;font-weight:700;cursor:pointer;box-shadow:0 6px 18px rgba(0,0,0,0.15);transition:transform .15s ease, background .2s}
+  .tab:hover{transform:translateY(-2px);background:#ff6b3d}
+  .tab[aria-selected="true"]{background:#ff9a6b}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px;margin:18px auto}
+  .card{background:var(--card);border-radius:18px;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,.08);cursor:pointer;border:2px solid #ffd8bd;transition:transform .15s ease, box-shadow .2s}
+  .card:hover{transform:translateY(-4px);box-shadow:0 12px 30px rgba(0,0,0,.12)}
+  .thumb{aspect-ratio:4/3;background:#ffe9da}
+  .thumb img{width:100%;height:100%;object-fit:cover;display:block}
+  .card h3{margin:10px 12px 14px;font-size:18px;color:#2f2f2f}
+
+  .section{display:none}
+  .section.active{display:block}
+
+  /* Modal */
+  .modal{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,.45);padding:16px;z-index:50}
+  .modal.open{display:flex}
+  .sheet{max-width:860px;width:100%;background:#fff;border-radius:18px;overflow:auto;max-height:90vh;box-shadow:0 18px 50px rgba(0,0,0,.25);border:2px solid #ffc6a1}
+  .sheet-header{position:sticky;top:0;background:#fff;display:flex;align-items:center;justify-content:space-between;padding:12px 16px;border-bottom:1px solid #ffe0cc}
+  .sheet-title{font-size:20px;font-weight:800;color:#333}
+  .close{background:var(--brand);color:#fff;border:none;border-radius:10px;padding:8px 14px;font-weight:700;cursor:pointer}
+  .sheet-body{padding:16px}
+  .meta{display:grid;gap:10px}
+  .meta h4{margin:10px 0 6px;font-size:17px;color:#333}
+  .meta p{margin:0 0 8px;line-height:1.8}
+  .note{background:#fff7ef;border:1px dashed #ffc49d;border-radius:12px;padding:10px;margin-top:8px}
+
+  footer{padding:24px;text-align:center;color:#777}
+
+  @media (prefers-color-scheme: dark){
+    body{background:#1c1b1a;color:#eee}
+    .card{border-color:#5a4037;background:#2a2826}
+    .sheet{background:#242321;border-color:#5a4037}
+    .sheet-header{background:#242321;border-bottom-color:#3a2d28}
+    .meta h4{color:#f5f5f5}
+    .card h3{color:#fafafa}
+  }
+</style>
+</head>
+<body>
+  <header class="hero" role="banner">
+    <div class="hero-inner">
+      <h1>دليل وصفات بداية الأكل الصلب للرضع (6-12 أشهر)</h1>
+      <p>اختاري الفئة العمرية ثم اضغطي على الوصفة للاطلاع على التفاصيل.</p>
+    </div>
+  </header>
+
+  <main class="container" role="main">
+    <nav class="tabs" aria-label="الفئات العمرية">
+      <button class="tab" aria-selected="true" data-target="age-6-7">6-7 أشهر</button>
+      <button class="tab" aria-selected="false" data-target="age-8-9">8-9 أشهر</button>
+      <button class="tab" aria-selected="false" data-target="age-9-12">9-12 أشهر</button>
+    </nav>
+
+    <!-- 6-7 أشهر -->
+    <section id="age-6-7" class="section active" aria-labelledby="tab-6-7">
+      <div class="grid">
+        <!-- 1 مهروس الجزر والبطاطس -->
+        <article class="card" data-modal="r-6-7-1" role="button" tabindex="0" aria-label="مهروس الجزر والبطاطس">
+          <div class="thumb"><img alt="مهروس الجزر والبطاطس" src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=900&auto=format&fit=crop"/></div>
+          <h3>مهروس الجزر والبطاطس</h3>
+        </article>
+        <!-- 2 مهروس التفاح والكمثرى -->
+        <article class="card" data-modal="r-6-7-2" role="button" tabindex="0" aria-label="مهروس التفاح والكمثرى">
+          <div class="thumb"><img alt="مهروس التفاح والكمثرى" src="https://images.unsplash.com/photo-1572449043416-55f4685c9bbf?q=80&w=900&auto=format&fit=crop"/></div>
+          <h3>مهروس التفاح والكمثرى</h3>
+        </article>
+        <!-- 3 مهروس الكوسا والبطاطس -->
+        <article class="card" data-modal="r-6-7-3" role="button" tabindex="0" aria-label="مهروس الكوسا والبطاطس">
+          <div class="thumb"><img alt="مهروس الكوسا والبطاطس" src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?q=80&w=900&auto=format&fit=crop"/></div>
+          <h3>مهروس الكوسا والبطاطس</h3>
+        </article>
+        <!-- 4 مهروس البروكولي والجزر -->
+        <article class="card" data-modal="r-6-7-4" role="button" tabindex="0" aria-label="مهروس البروكولي والجزر">
+          <div class="thumb"><img alt="مهروس البروكولي والجزر" src="https://images.unsplash.com/photo-1604908176997-4316521a846b?q=80&w=900&auto=format&fit=crop"/></div>
+          <h3>مهروس البروكولي والجزر</h3>
+        </article>
+      </div>
+    </section>
+
+    <!-- 8-9 أشهر -->
+    <section id="age-8-9" class="section" aria-labelledby="tab-8-9">
+      <div class="grid">
+        <!-- 1 البطاطس والجزر مع الدجاج والكوسا -->
+        <article class="card" data-modal="r-8-9-1" role="button" tabindex="0" aria-label="مهروس البطاطس والجزر مع الدجاج والكوسا">
+          <div class="thumb"><img alt="مهروس البطاطس والجزر مع الدجاج والكوسا" src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?q=80&w=900&auto=format&fit=crop"/></div>
+          <h3>مهروس البطاطس والجزر مع الدجاج والكوسا</h3>
+        </article>
+        <!-- 2 التفاح والموز مع الشوفان -->
+        <article class="card" data-modal="r-8-9-2" role="button" tabindex="0" aria-label="مهروس التفاح والموز مع الشوفان">
+          <div class="thumb"><img alt="مهروس التفاح والموز مع الشوفان" src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?q=80&w=900&auto=format&fit=crop"/></div>
+          <h3>مهروس التفاح والموز مع الشوفان</h3>
+        </article>
+        <!-- 3 البروكولي والجزر مع العدس -->
+        <article class="card" data-modal="r-8-9-3" role="button" tabindex="0" aria-label="مهروس البروكولي والجزر مع العدس">
+          <div class="thumb"><img alt="مهروس البروكولي والجزر مع العدس" src="https://images.unsplash.com/photo-1604908554122-03a3c78c3d2a?q=80&w=900&auto=format&fit=crop"/></div>
+          <h3>مهروس البروكولي والجزر مع العدس</h3>
+        </article>
+        <!-- 4 القرع والجزر مع الدجاج -->
+        <article class="card" data-modal="r-8-9-4" role="button" tabindex="0" aria-label="مهروس القرع والجزر مع الدجاج">
+          <div class="thumb"><img alt="مهروس القرع والجزر مع الدجاج" src="https://images.unsplash.com/photo-1604908553889-bb0a0b8d64e1?q=80&w=900&auto=format&fit=crop"/></div>
+          <h3>مهروس القرع والجزر مع الدجاج</h3>
+        </article>
+      </div>
+    </section>
+
+    <!-- 9-12 أشهر -->
+    <section id="age-9-12" class="section" aria-labelledby="tab-9-12">
+      <div class="grid">
+        <!-- 1 بطاطس وجزر مع دجاج وكوسا مهروس جزئيًا -->
+        <article class="card" data-modal="r-9-12-1" role="button" tabindex="0" aria-label="بطاطس وجزر مع دجاج وكوسا مهروس جزئيًا">
+          <div class="thumb"><img alt="بطاطس وجزر مع دجاج وكوسا" src="https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?q=80&w=900&auto=format&fit=crop"/></div>
+          <h3>بطاطس وجزر مع دجاج وكوسا مهروس جزئيًا</h3>
+        </article>
+        <!-- 2 التفاح والموز مع الشوفان والمكسرات -->
+        <article class="card" data-modal="r-9-12-2" role="button" tabindex="0" aria-label="مهروس التفاح والموز مع الشوفان والمكسرات">
+          <div class="thumb"><img alt="مهروس التفاح والموز مع الشوفان والمكسرات" src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=900&auto=format&fit=crop"/></div>
+          <h3>مهروس التفاح والموز مع الشوفان والمكسرات (اختياري)</h3>
+        </article>
+        <!-- 3 البروكولي والجزر مع العدس والبقوليات -->
+        <article class="card" data-modal="r-9-12-3" role="button" tabindex="0" aria-label="مهروس البروكولي والجزر مع العدس والبقوليات">
+          <div class="thumb"><img alt="مهروس البروكولي والجزر مع العدس والبقوليات" src="https://images.unsplash.com/photo-1589307004173-3c95204ea457?q=80&w=900&auto=format&fit=crop"/></div>
+          <h3>مهروس البروكولي والجزر مع العدس والبقوليات</h3>
+        </article>
+        <!-- 4 القرع والجزر مع الدجاج والبطاطس -->
+        <article class="card" data-modal="r-9-12-4" role="button" tabindex="0" aria-label="مهروس القرع والجزر مع الدجاج والبطاطس">
+          <div class="thumb"><img alt="مهروس القرع والجزر مع الدجاج والبطاطس" src="https://images.unsplash.com/photo-1505575972945-28011352e83f?q=80&w=900&auto=format&fit=crop"/></div>
+          <h3>مهروس القرع والجزر مع الدجاج والبطاطس</h3>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modals Content (النصوص كما زودتِ بالضبط) -->
+  
+  <!-- 6-7: 1 مهروس الجزر والبطاطس -->
+  <div id="r-6-7-1" class="modal" aria-hidden="true" role="dialog" aria-label="مهروس الجزر والبطاطس">
+    <div class="sheet">
+      <div class="sheet-header"><div class="sheet-title">مهروس الجزر والبطاطس</div><button class="close" data-close>إغلاق</button></div>
+      <div class="sheet-body">
+        <div class="meta">
+<p>يعتبر مهروس الجزر والبطاطس وجبة مثالية للرضع عند بدء تقديم الأطعمة الصلبة. غني بالفيتامينات A وC والألياف التي تدعم النمو وصحة الجهاز الهضمي.</p>
+<h4>المكونات:</h4>
+<p>• جزرتان متوسطتا الحجم<br>• حبة بطاطس متوسطة الحجم<br>• ماء للسلق<br>• حليب الأم أو الحليب الصناعي (اختياري)</p>
+<h4>طريقة التحضير:</h4>
+<p>1. قشري الجزر والبطاطس وقطعيها إلى قطع صغيرة لتسهيل السلق والهرس.<br>2. ضعي القطع في قدر واغمريها بالماء. اتركيها على نار متوسطة حتى تنضج تمامًا (حوالي 15-20 دقيقة).<br>3. صفي الماء واهرسي الخضروات باستخدام شوكة أو خلاط يدوي حتى يصبح القوام ناعم ومتجانس.<br>4. إذا كان المهروس سميكًا، أضيفي قليل من الحليب لتخفيف القوام.</p>
+<h4>نصائح:</h4>
+<p>• التخزين: يمكن حفظ المهروس في الثلاجة حتى 48 ساعة أو تجميده في قوالب الثلج.<br>• التقديم: تأكدي من درجة الحرارة قبل تقديمه للطفل.<br>• التنويع: يمكن إضافة القرع أو الكوسا لزيادة التنوع الغذائي.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 6-7: 2 مهروس التفاح والكمثرى -->
+  <div id="r-6-7-2" class="modal" aria-hidden="true" role="dialog" aria-label="مهروس التفاح والكمثرى">
+    <div class="sheet">
+      <div class="sheet-header"><div class="sheet-title">مهروس التفاح والكمثرى</div><button class="close" data-close>إغلاق</button></div>
+      <div class="sheet-body">
+        <div class="meta">
+<p>مهروس التفاح والكمثرى وجبة حلوة طبيعية، سهلة الهضم، تمد الطفل بالفيتامينات C والألياف الضرورية.</p>
+<h4>المكونات:</h4>
+<p>• تفاحتان متوسطتا الحجم<br>• حبة كمثرى متوسطة الحجم<br>• ماء للسلق</p>
+<h4>طريقة التحضير:</h4>
+<p>1. قشري التفاح والكمثرى وقطعيها إلى مكعبات صغيرة.<br>2. اسلقيها في قليل من الماء حتى تلين (حوالي 10-15 دقيقة).<br>3. اهرسي الفواكه حتى تصبح ناعمة أو استخدمي خلاط يدوي.</p>
+<h4>نصائح:</h4>
+<p>• يمكن إضافة قليل من حليب الأم لتسهيل الهضم.<br>• التقديم: بارد أو دافئ حسب رغبة الطفل.<br>• التخزين: في الثلاجة حتى يومين أو التجميد لفترات أطول.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 6-7: 3 مهروس الكوسا والبطاطس -->
+  <div id="r-6-7-3" class="modal" aria-hidden="true" role="dialog" aria-label="مهروس الكوسا والبطاطس">
+    <div class="sheet">
+      <div class="sheet-header"><div class="sheet-title">مهروس الكوسا والبطاطس</div><button class="close" data-close>إغلاق</button></div>
+      <div class="sheet-body">
+        <div class="meta">
+<p>وجبة خفيفة وسهلة الهضم، غنية بالفيتامينات والمعادن مثل البوتاسيوم والمغنيسيوم.</p>
+<h4>المكونات:</h4>
+<p>• حبة كوسا متوسطة<br>• حبة بطاطس متوسطة<br>• ماء للسلق<br>• حليب الأم أو الصناعي (اختياري)</p>
+<h4>طريقة التحضير:</h4>
+<p>1. قشري البطاطس واغسلي الكوسا، وقطعيها إلى قطع صغيرة.<br>2. اسلقيها في الماء حتى تنضج (حوالي 12-15 دقيقة).<br>3. اهرسي المكونات جيدًا حتى يصبح القوام ناعم.<br>4. يمكن إضافة القليل من الحليب لتخفيف القوام.</p>
+<h4>نصائح:</h4>
+<p>• التخزين: في الثلاجة حتى 48 ساعة أو التجميد في قوالب الثلج.<br>• التقديم: تحقق من درجة الحرارة قبل إعطاء الطفل.<br>• التنويع: يمكن إضافة قليل من الجزر أو البطاطس حسب الرغبة.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 6-7: 4 مهروس البروكولي والجزر -->
+  <div id="r-6-7-4" class="modal" aria-hidden="true" role="dialog" aria-label="مهروس البروكولي والجزر">
+    <div class="sheet">
+      <div class="sheet-header"><div class="sheet-title">مهروس البروكولي والجزر</div><button class="close" data-close>إغلاق</button></div>
+      <div class="sheet-body">
+        <div class="meta">
+<p>غني بالفيتامينات C وK والألياف، يساعد على تعزيز جهاز المناعة والهضم الصحي للطفل.</p>
+<h4>المكونات:</h4>
+<p>• زهرة بروكولي صغيرة<br>• جزرة متوسطة<br>• ماء للسلق<br>• حليب الأم أو الصناعي (اختياري)</p>
+<h4>طريقة التحضير:</h4>
+<p>1. اغسلي البروكولي والجزر وقطعيهما إلى قطع صغيرة.<br>2. اسلقيهما حتى تصبح طرية (حوالي 12 دقيقة).<br>3. اهرسي المكونات جيدًا حتى يصبح القوام ناعم ومتجانس.<br>4. يمكن إضافة قليل من الحليب لتسهيل الهضم.</p>
+<h4>نصائح:</h4>
+<p>• التخزين: في الثلاجة حتى 48 ساعة أو التجميد.<br>• التقديم: تحقق من درجة الحرارة.<br>• التنويع: يمكن خلطه مع البطاطس أو الكوسا لإضافة تنوع.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 8-9: 1 مهروس البطاطس والجزر مع الدجاج والكوسا -->
+  <div id="r-8-9-1" class="modal" aria-hidden="true" role="dialog" aria-label="مهروس البطاطس والجزر مع الدجاج والكوسا">
+    <div class="sheet">
+      <div class="sheet-header"><div class="sheet-title">مهروس البطاطس والجزر مع الدجاج والكوسا</div><button class="close" data-close>إغلاق</button></div>
+      <div class="sheet-body">
+        <div class="meta">
+<p>وجبة متكاملة من البروتين والخضار، تعزز نمو العضلات والجهاز المناعي للطفل.</p>
+<h4>المكونات:</h4>
+<p>• جزرة متوسطة<br>• بطاطس متوسطة<br>• 1/4 حبة كوسا صغيرة<br>• 50 غرام صدر دجاج مسلوق<br>• ماء للسلق<br>• حليب الأم أو الصناعي (اختياري)</p>
+<h4>طريقة التحضير:</h4>
+<p>1. قشري البطاطس والجزر واغسلي الكوسا، وقطعي جميع المكونات إلى مكعبات صغيرة.<br>2. اسلقيها مع الدجاج حتى تنضج تمامًا (حوالي 15-20 دقيقة).<br>3. اهرسي المكونات حتى يصبح القوام ناعمًا مع ترك بعض القطع الصغيرة لتعويد الطفل على القوام الجديد.<br>4. أضيفي قليل من الحليب لتخفيف القوام إذا لزم.</p>
+<h4>نصائح:</h4>
+<p>• التخزين: في الثلاجة حتى 48 ساعة أو تجميد لفترات أطول.<br>• التقديم: تحقق من درجة الحرارة.<br>• التنويع: يمكن إضافة البروكولي أو القرع حسب الرغبة.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 8-9: 2 مهروس التفاح والموز مع الشوفان -->
+  <div id="r-8-9-2" class="modal" aria-hidden="true" role="dialog" aria-label="مهروس التفاح والموز مع الشوفان">
+    <div class="sheet">
+      <div class="sheet-header"><div class="sheet-title">مهروس التفاح والموز مع الشوفان</div><button class="close" data-close>إغلاق</button></div>
+      <div class="sheet-body">
+        <div class="meta">
+<p>وجبة فطور مغذية، غنية بالألياف والكربوهيدرات، تساعد على تعزيز الطاقة والهضم.</p>
+<h4>المكونات:</h4>
+<p>• تفاحة متوسطة<br>• موزة ناضجة<br>• 1 ملعقة كبيرة شوفان مطبوخ<br>• ماء للسلق التفاح فقط</p>
+<h4>طريقة التحضير:</h4>
+<p>1. قشري التفاح وقطعيه إلى مكعبات، اسلقيه في قليل من الماء حتى يصبح لينًا.<br>2. أهرسي التفاح والموز مع الشوفان المطبوخ حتى يصبح القوام ناعم مع بعض القطع الصغيرة.</p>
+<h4>نصائح:</h4>
+<p>• التخزين: يمكن الاحتفاظ به في الثلاجة لمدة 24 ساعة فقط.<br>• التقديم: تأكدي من القوام والقطع الصغيرة لتجنب gagging.<br>• التنويع: يمكن إضافة قليل من القرفة لإضافة نكهة آمنة.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 8-9: 3 مهروس البروكولي والجزر مع العدس -->
+  <div id="r-8-9-3" class="modal" aria-hidden="true" role="dialog" aria-label="مهروس البروكولي والجزر مع العدس">
+    <div class="sheet">
+      <div class="sheet-header"><div class="sheet-title">مهروس البروكولي والجزر مع العدس</div><button class="close" data-close>إغلاق</button></div>
+      <div class="sheet-body">
+        <div class="meta">
+<p>غني بالبروتين النباتي والفيتامينات، مفيد للجهاز الهضمي وتعزيز المناعة.</p>
+<h4>المكونات:</h4>
+<p>• زهرة بروكولي صغيرة<br>• جزرة متوسطة<br>• 2 ملعقة كبيرة عدس أصفر<br>• ماء للسلق<br>• حليب الأم أو الصناعي (اختياري)</p>
+<h4>طريقة التحضير:</h4>
+<p>1. اغسلي البروكولي والجزر وقطعيهما إلى قطع صغيرة.<br>2. اسلقي العدس مع الخضار حتى تنضج تمامًا (حوالي 15 دقيقة).<br>3. اهرسي المكونات جيدًا مع بعض القطع الصغيرة لتعويد الطفل على القوام الجديد.<br>4. أضيفي قليل من الحليب إذا لزم.</p>
+<h4>نصائح:</h4>
+<p>• التخزين: في الثلاجة حتى 48 ساعة أو التجميد.<br>• التقديم: تحقق من درجة الحرارة قبل تقديمه.<br>• التنويع: يمكن إضافة البطاطس أو الكوسا لزيادة التنوع.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 8-9: 4 مهروس القرع والجزر مع الدجاج -->
+  <div id="r-8-9-4" class="modal" aria-hidden="true" role="dialog" aria-label="مهروس القرع والجزر مع الدجاج">
+    <div class="sheet">
+      <div class="sheet-header"><div class="sheet-title">مهروس القرع والجزر مع الدجاج</div><button class="close" data-close>إغلاق</button></div>
+      <div class="sheet-body">
+        <div class="meta">
+<p>غني بالفيتامينات A وC والبروتين، وجبة متكاملة لتعزيز النمو والمناعة.</p>
+<h4>المكونات:</h4>
+<p>• جزرة متوسطة<br>• 50 غرام صدر دجاج مسلوق<br>• 50 غرام قرع<br>• ماء للسلق<br>• حليب الأم أو الصناعي (اختياري)</p>
+<h4>طريقة التحضير:</h4>
+<p>1. قشري الجزر والقرع وقطعيهما إلى قطع صغيرة، وقطعي الدجاج أيضًا إلى مكعبات صغيرة.<br>2. اسلقي المكونات حتى تصبح طرية (حوالي 15 دقيقة).<br>3. اهرسي المكونات حتى يصبح القوام ناعمًا مع بعض القطع الصغيرة لتعويد الطفل على القوام الأكثر صلابة.<br>4. أضيفي قليل من الحليب إذا لزم.</p>
+<h4>نصائح:</h4>
+<p>• التخزين: في الثلاجة حتى 48 ساعة أو التجميد.<br>• التقديم: تحقق من درجة الحرارة قبل تقديمه.<br>• التنويع: يمكن إضافة الكوسا أو البطاطس حسب الرغبة.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 9-12: 1 بطاطس وجزر مع دجاج وكوسا مهروس جزئيًا -->
+  <div id="r-9-12-1" class="modal" aria-hidden="true" role="dialog" aria-label="بطاطس وجزر مع دجاج وكوسا مهروس جزئيًا">
+    <div class="sheet">
+      <div class="sheet-header"><div class="sheet-title">بطاطس وجزر مع دجاج وكوسا مهروس جزئيًا</div><button class="close" data-close>إغلاق</button></div>
+      <div class="sheet-body">
+        <div class="meta">
+<p>وجبة متكاملة غنية بالبروتين والخضار، تساعد على نمو العضلات وتعويد الطفل على القوام الأكثر صلابة.</p>
+<h4>المكونات:</h4>
+<p>• جزرة متوسطة<br>• بطاطس متوسطة<br>• 50 غرام صدر دجاج مسلوق<br>• 1/4 حبة كوسا<br>• ماء للسلق<br>• حليب الأم أو الصناعي (اختياري)</p>
+<h4>طريقة التحضير:</h4>
+<p>1. قشري البطاطس والجزر واغسلي الكوسا، وقطعي جميع المكونات إلى مكعبات صغيرة.<br>2. اسلقي الخضار والدجاج حتى تنضج (حوالي 15-20 دقيقة).<br>3. اهرسي جزئيًا بحيث تبقى بعض القطع الصغيرة لتعويد الطفل على المضغ.<br>4. أضيفي قليل من الحليب إذا لزم.</p>
+<h4>نصائح:</h4>
+<p>• التخزين: في الثلاجة حتى 48 ساعة أو التجميد.<br>• التقديم: تحقق من درجة الحرارة قبل تقديم الطفل.<br>• التنويع: يمكن إضافة البروكولي أو القرع حسب الرغبة.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 9-12: 2 مهروس التفاح والموز مع الشوفان والمكسرات المهروسة (اختياري) -->
+  <div id="r-9-12-2" class="modal" aria-hidden="true" role="dialog" aria-label="مهروس التفاح والموز مع الشوفان والمكسرات">
+    <div class="sheet">
+      <div class="sheet-header"><div class="sheet-title">مهروس التفاح والموز مع الشوفان والمكسرات (اختياري)</div><button class="close" data-close>إغلاق</button></div>
+      <div class="sheet-body">
+        <div class="meta">
+<p>فطور مغذي غني بالألياف والكربوهيدرات، يساعد على تعزيز الطاقة والهضم.</p>
+<h4>المكونات:</h4>
+<p>• تفاحة متوسطة<br>• موزة ناضجة<br>• 1 ملعقة كبيرة شوفان مطبوخ<br>• قليل من اللوز أو الجوز المطحون ناعم (اختياري، بدون قطع كبيرة)<br>• ماء للسلق التفاح فقط</p>
+<h4>طريقة التحضير:</h4>
+<p>1. قشري التفاح وقطعيه، اسلقيه حتى يصبح لينًا.<br>2. اهرسي التفاح والموز مع الشوفان والمكسرات حتى يصبح القوام ناعم مع بعض القوام الخفيف.</p>
+<h4>نصائح:</h4>
+<p>• التخزين: في الثلاجة 24 ساعة فقط.<br>• التقديم: تحقق من القوام لتجنب gagging.<br>• التنويع: يمكن إضافة قليل من القرفة أو الزبيب المهروس.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 9-12: 3 مهروس البروكولي والجزر مع العدس والبقوليات -->
+  <div id="r-9-12-3" class="modal" aria-hidden="true" role="dialog" aria-label="مهروس البروكولي والجزر مع العدس والبقوليات">
+    <div class="sheet">
+      <div class="sheet-header"><div class="sheet-title">مهروس البروكولي والجزر مع العدس والبقوليات</div><button class="close" data-close>إغلاق</button></div>
+      <div class="sheet-body">
+        <div class="meta">
+<p>وجبة غنية بالبروتين النباتي والألياف، مفيدة للجهاز الهضمي ونمو الطفل.</p>
+<h4>المكونات:</h4>
+<p>• زهرة بروكولي صغيرة<br>• جزرة متوسطة<br>• 2 ملعقة كبيرة عدس أصفر أو أحمر<br>• ماء للسلق<br>• حليب الأم أو الصناعي (اختياري)</p>
+<h4>طريقة التحضير:</h4>
+<p>1. اغسلي البروكولي والجزر وقطعيهما إلى قطع صغيرة.<br>2. اسلقي العدس مع الخضار حتى تنضج المكونات (حوالي 15 دقيقة).<br>3. اهرسي جزئيًا لتترك بعض القطع الصغيرة لتعويد الطفل على المضغ.<br>أضيفي قليل من الحليب إذا لزم.</p>
+<h4>نصائح:</h4>
+<p>التخزين: في الثلاجة حتى 48 ساعة أو التجميد.<br>• التقديم: تحقق من درجة الحرارة.<br>• التنويع: يمكن إضافة البطاطس أو الكوسا حسب الرغبة.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 9-12: 4 مهروس القرع والجزر مع الدجاج والبطاطس -->
+  <div id="r-9-12-4" class="modal" aria-hidden="true" role="dialog" aria-label="مهروس القرع والجزر مع الدجاج والبطاطس">
+    <div class="sheet">
+      <div class="sheet-header"><div class="sheet-title">مهروس القرع والجزر مع الدجاج والبطاطس</div><button class="close" data-close>إغلاق</button></div>
+      <div class="sheet-body">
+        <div class="meta">
+<p>غني بالفيتامينات A وC والبروتين، وجبة متكاملة لتعزيز النمو والمناعة.</p>
+<h4>المكونات:</h4>
+<p>• جزرة متوسطة<br>• 50 غرام صدر دجاج مسلوق<br>• 50 غرام قرع<br>• بطاطس متوسطة<br>• ماء للسلق<br>• حليب الأم أو الصناعي (اختياري)</p>
+<h4>طريقة التحضير:</h4>
+<p>1. قشري الجزر والقرع وقطعيهما إلى مكعبات صغيرة، وقطعي البطاطس والدجاج أيضًا.<br>2. اسلقي جميع المكونات حتى تصبح طرية (حوالي 15 دقيقة).<br>3. اهرسي جزئيًا مع ترك بعض القطع الصغيرة لتعويد الطفل على المضغ.<br>4. أضيفي قليل من الحليب إذا لزم.</p>
+<h4>نصائح:</h4>
+<p>• التخزين: في الثلاجة حتى 48 ساعة أو التجميد.<br>• التقديم: تحقق من درجة الحرارة قبل تقديم الطفل.<br>• التنويع: يمكن إضافة الكوسا أو البروكولي حسب الرغبة.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    © تطبيق وصفات الرضع — نسخة تجريبية محاكية للتطبيق
+  </footer>
+
+<script>
+  // Tabs switching
+  const tabs = document.querySelectorAll('.tab');
+  const sections = document.querySelectorAll('.section');
+  tabs.forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      tabs.forEach(b=>b.setAttribute('aria-selected','false'));
+      btn.setAttribute('aria-selected','true');
+      const target = btn.dataset.target;
+      sections.forEach(s=>s.classList.remove('active'));
+      document.getElementById(target).classList.add('active');
+      window.scrollTo({top:document.querySelector('.tabs').offsetTop-8,behavior:'smooth'});
+    });
+  });
+
+  // Open/close modals
+  const cards = document.querySelectorAll('.card');
+  const modals = document.querySelectorAll('.modal');
+  cards.forEach(card=>{
+    card.addEventListener('click',()=>{
+      const id = card.getAttribute('data-modal');
+      const modal = document.getElementById(id);
+      if(modal){ modal.classList.add('open'); modal.setAttribute('aria-hidden','false'); }
+    });
+    card.addEventListener('keydown', (e)=>{
+      if(e.key==='Enter' || e.key===' '){ card.click(); e.preventDefault(); }
+    });
+  });
+
+  function closeModal(m){ m.classList.remove('open'); m.setAttribute('aria-hidden','true'); }
+  modals.forEach(m=>{
+    m.addEventListener('click',(e)=>{ if(e.target===m) closeModal(m); });
+    m.querySelector('[data-close]').addEventListener('click',()=>closeModal(m));
+  });
+
+  // Keyboard ESC to close any open modal
+  window.addEventListener('keydown', (e)=>{
+    if(e.key==='Escape'){
+      document.querySelectorAll('.modal.open').forEach(closeModal);
+    }
+  });
+</script>
+</body>
+</html>
